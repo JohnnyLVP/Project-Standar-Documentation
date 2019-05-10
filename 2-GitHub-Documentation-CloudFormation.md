@@ -35,11 +35,16 @@ In this folder we will find all the services that the aplication ***Aplication-N
 
 
 
-
 ## 2. Setup
 
 *Here will explain al the Templates that there are in the Setup Folder.*
 ***In this folder, we have all the services that will deploy once.***
+
+### 1.2 AWS Services
+
+*List the services that the project use in the setup part and put details of each services*
+
+*For Example:*
 
 * SNS
 
@@ -47,21 +52,29 @@ In this folder we will find all the services that the aplication ***Aplication-N
 |---|--------------------|-------------|
 |QA|*Example: SNS-qas*|*Example: Send Notification ... *|
 
+
 * SQS
+
 
 |Env|SQS Name| Queue Type|Functionality|
 |---|--------------------|-------------|
 |QA|*Example: SQS-qas-type*|*Example: Standar Queue*|*Example:*|
 
+
 * S3
+
 
 |Env|Bucket Name|
 |---|-----------|
 |QA|* Example: ROD-belc-Bucket-qas*|
 |PRD|* Example: ROD-belc-Bucket-prd*|
 
+
 * IAM Roles
 
+|Env|Role Name|Policies|
+|---|--------|-----|
+|QAs|*Example: ROD-Role*|*Example: S3 List, S3 PutObject, etc*|
 
 ## 3. Comments
 

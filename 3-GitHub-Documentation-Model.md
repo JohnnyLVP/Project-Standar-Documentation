@@ -14,12 +14,23 @@
 * [6. Acknowledgements]()
 
 ## 1. Analitical Conceptual Architecture
-*Here, please put detail about the Conceptual architecture of the project*
+*Put detail about the Conceptual architecture of the project in a diagram*
+*Explain the flow that the Machine Learning model will do, to understad each step*
 
 ## 2. Machine Learning Techniques
 *List in order the Machine Leaning techniques that are involved in the process.*
 
 *For the ones that import from a library, indicate its name.*
+
+## 3. Requirements
+
+### 3.1. Programming Language and Installation
+
+*Put the language that the model is using and the dependencies that need to be installed for use the language*
+
+### 3.2. Libraries
+
+*All the libraries and its versiones, that the model use.*
 
 ## 3. Data
 
@@ -40,10 +51,20 @@
 
 *List all the input data following the next*
 
-
 |Table Name|Table Format|AWS Location|Schema/S3 Path|
 |---|---|---|---|
 |*Name of the Table*| *Is a database table, parquet file, csv file, etc.*  | *Where is the data Redshift or S3* | *Where is located, if is in Redshift the name of the schema, if is in S3 the path where is the file*   |
+
+### 3.3 Data Variables Dictionary
+
+*List all the variables that the model will use for training and prediction*
+
+*Example:*
+
+|Model|Training/Prediction|Variable Name|Variable Description|Data Type|
+|-----|-------------------|-------------|--------------------|---------|
+|Offer Model|Training|Codpais|Is the Code of the country | varchar|
+
 
 ## 4. Manual
 
