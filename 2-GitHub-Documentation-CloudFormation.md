@@ -57,8 +57,8 @@ In this folder we will find all the services that the aplication ***Aplication-N
 
 
 |Env|SQS Name| Queue Type|Functionality|
-|---|--------------------|-------------|
-|QA|*Example: SQS-qas-type*|*Example: Standar Queue*|*Example:*|
+|---|--------|-----------|-------------|
+|QA|*Example: SQS-qas-type*|*Example: Standar Queue*|*Example: ..*|
 
 
 * S3
