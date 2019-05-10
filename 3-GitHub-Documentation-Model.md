@@ -70,7 +70,7 @@
 
 *Instructions for executing the solution locally. Which scripts need to be run? *
 
-* If the solution is executed from terminal, offer an example of how to execute the scripts.*
+*If the solution is executed from terminal, offer an example of how to execute the scripts.*
 
 ```python
 print("Example Here!")
