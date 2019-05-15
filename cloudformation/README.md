@@ -6,7 +6,8 @@ In this folder we will find all the services that the aplication ***Aplication-N
 * [1. Deploy](1-Deploy)
   * [1.2 AWS Services](1.2-AWS-Services)
 * [2. Setup](2-Setup)
-* [3. Comments](3-Comments)
+  * [2.2 AWS Services](2.2-AWS-Services)
+
 
 ## 1. Deploy
 
@@ -40,7 +41,7 @@ In this folder we will find all the services that the aplication ***Aplication-N
 *Here will explain al the Templates that there are in the Setup Folder.*
 ***In this folder, we have all the services that will deploy once.***
 
-### 1.2 AWS Services
+### 2.2. AWS Services
 
 *List the services that the project use in the setup part and put details of each services*
 

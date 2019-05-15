@@ -1,4 +1,4 @@
-# Code Documentation
+# Training Documentation
 
 *This is a template for python code*
 

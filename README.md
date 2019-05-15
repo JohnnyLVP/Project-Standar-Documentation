@@ -4,10 +4,42 @@
 
 ## Table of Contents
 
+* [0. WorkFlow]()
 * [1. Conceptual Architecture](1-Technical-Architecture)
 * [2. Technical Architecture](1-Technical-Architecture)
 * [3. Technologies](3-Technologies)
 * [4. Manual](4-Manual)
+
+## 0. Workflow
+
+We use a modified version of Gitflow:
+
+### 0.1 Versioning
+
+- `v-{major}-{minor}`
+  - `major` for new features
+  - `minor` for hotfixes
+
+### 0.2 Features
+
+1. Create new branch `feature/{short-description}` using `development` as base
+2. Work on it normally
+3. Open pull request to `development` when done
+4. Merge it to `development`
+5. Open pull request from `development` to `master` when doing a new release
+6. Merge it to `master`
+7. Tag it as appropriate using the versioning scheme (increase the major version by one
+and reset the minor version to zero)
+
+### 0.3 Hotfixes
+
+1. Create new branch `hotfix/{short-description}` using `master` as base
+2. Work on it normally - hotfixes should be extremely small
+3. Open pull request when is done
+4. Merge it to `master`
+5. Tag it as appropriate using the versioning scheme (keep same major, increase
+minor version by one)
+
 
 ## 1. Conceptual Architecture
 *In this section explain the train/predict conceptual architecture that the aplication has.*
