@@ -5,60 +5,60 @@
 # Table of Contents
 
 * [1. Analitical Conceptual Architecture](1-Analitical-Conceptual-Architecture)
-* [2. Machine Learning Techniques]()
-* [3. Requirements]()
-  * [3.1 Programming Language and Installation]()
-  * [3.2 Libraries]()
-* [4. Data]()
-  * [4.1 Input Data]()
-  * [4.2 Output Data]()
-  * [4.3 Data Variables Dictionary]()
-* [5. Manual]()
-* [6. Reported Bugs]()
+* [2. Training]()
+  * [2.1. Machine Learning Techniques]()
+  * [2.2. Parameters]()
+  * [2.3. Business Rules]()
+  * [2.4. Model Format]()
+* [3. Data]()
+  * [3.1. Input Data]()
+  * [3.2. Output Data]()
+  * [3.3. Data Variables Dictionary]()
 
-## 1. Analitical Conceptual Architecture
-*Put detail about the Conceptual architecture of the project in a diagram*
-*Explain the flow that the Machine Learning model will do, to understad each step*
+## 1. Execution Flow Diagram
+*Put the flow diagram for the execution*
 
-## 2. Machine Learning Techniques
-*List in order the Machine Leaning techniques that are involved in the process.*
+*Flow diagram: Need to considerer all the steps for running the training and all the services that are related with the training.*
 
-*For the ones that import from a library, indicate its name.*
+## 2. Training
 
-## 3. Requirements
+### 2.1 Machine Learning techniques
+*Detail of the model that the project use for training*
 
-### 3.1. Programming Language and Installation
+### 2.2 Parameters
+*Detail of the parameters that the model need for the execution*
 
-*Put the language that the model is using and the dependencies that need to be installed for use the language*
+### 2.3 Business Rules
+*Put the detail of all the businees rules that the model consider for the training*
 
-### 3.2. Libraries
+## 2.4 Model Format
+*In Which format the model is serialized?(Pickle, parquet, other binary format)*
+*In which bucket of S3 will be upload the model?*
 
-*All the libraries and its versiones, that the model use.*
+## 3. Data
 
-## 4. Data
-
-### 4.1 Input
+### 3.1 Input
 *Which inputs are needed for the solution (CSVs, parameters, database, parquet files)? And where will each of them be located (S3, Redshift)?*
 
 *List all the input data following the next*
 
 
-|Table Name|Table Format|AWS Location|Schema/S3 Path|
-|---|---|---|---|
-| *Name of the Table*   | *Is a database table, parquet file, csv file, etc.*  | *Where is the data Redshift or S3* | *where is located, if is in Redshift the name of the schema, if is in S3 the path where is the file*   |
+|Table Name|Table Format|AWS Location|Schema/S3 Path|Size|
+|---|---|---|---|---|
+| *Name of the Table*   | *Is a database table, parquet file, csv file, etc.*  | *Where is the data Redshift or S3* | *where is located, if is in Redshift the name of the schema, if is in S3 the path where is the file*|*Data Volume in MB or GB*||
 
-### 4.2 Output
+### 3.2 Output
 *Which outputs generate the model? And where will each of them be located (S3, Redshift)?*
 
 *Which Project or Business Areas will use the data?*
 
 *List all the input data following the next*
 
-|Table Name|Table Format|AWS Location|Schema/S3 Path|
-|---|---|---|---|
-|*Name of the Table*| *Is a database table, parquet file, csv file, etc.*  | *Where is the data Redshift or S3* | *Where is located, if is in Redshift the name of the schema, if is in S3 the path where is the file*   |
+|Table Name|Table Format|AWS Location|Schema/S3 Path|Size|Project/BusinessArea|
+|---|---|---|---|----|----|
+|*Name of the Table*| *Is a database table, parquet file, csv file, etc.*  | *Where is the data Redshift or S3* | *Where is located, if is in Redshift the name of the schema, if is in S3 the path where is the file*|*Data Volume in MB or GB*|*Which Area or Business Area will use the output?*|
 
-### 4.3 Data Variables Dictionary
+### 3.3 Data Variables Dictionary
 
 *List all the variables that the model will use for training and prediction*
 
@@ -67,18 +67,3 @@
 |Model|Training/Prediction|Variable Name|Variable Description|Data Type|
 |-----|-------------------|-------------|--------------------|---------|
 |Offer Model|Training|Codpais|Is the Code of the country | varchar|
-
-
-## 5. Manual
-
-*Instructions for executing the solution locally. Which scripts need to be run? *
-
-*If the solution is executed from terminal, offer an example of how to execute the scripts.*
-
-```python
-print("Example Here!")
-```
-
-## 6. Reported Bugs
-*List and short explanation of all the bugs that have been reported*
-
