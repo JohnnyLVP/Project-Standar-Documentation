@@ -31,7 +31,7 @@
 ### 2.3 Business Rules
 *Put the detail of all the businees rules that the model consider for the training*
 
-## 2.4 Model Format
+### 2.4 Model Format
 *In Which format the model is serialized?(Pickle, parquet, other binary format)*
 *In which bucket of S3 will be upload the model?*
 
