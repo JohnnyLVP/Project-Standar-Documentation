@@ -8,7 +8,8 @@
 * [2. Technical Architecture](1-Technical-Architecture)
 * [3. Technologies](3-Technologies)
 * [4. Manual](4-Manual)
-* [5. Github-WorkFlow]()
+* [5. Github WorkFlow]()
+* [6. Code Guidelines]()
 
 ## 1. Conceptual Architecture
 *In this section explain the train/predict conceptual architecture that the aplication has.*
