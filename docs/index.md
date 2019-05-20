@@ -98,7 +98,7 @@ if you have installed pip, you can install `boto3` executing as admin, the follo
 pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org boto3
 ```
 
-#### 2.2.1 AWS S3
+#### 2.2.1 Python SDK for S3
 
 For working with S3 and if you are in an EC2 Instance, and that instances has a IAM role associated, We use:
 
@@ -136,6 +136,7 @@ s3.download_file(Bucket = '<Bucket-Name>',Key='<S3-Key>', Filename='<Local-Key>'
 ```
 For more details of using the `download_file` function you can find it [here](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.download_file).
 
+
 * **Upload S3 Files**
 Use this code line, if you want to upload some file from your local machine to S3
 
@@ -144,6 +145,7 @@ s3.upload_file(Filename = '<Local-Key>',Bucket ='<Bucket-Name>' ,Key = '<S3-Key>
 ```
 
 For more details of using the `upload_file` function, you can find it [here](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_file).
+
 
 * **Delete S3 Files**
 Use this code line, if you want to delete some file in S3.
@@ -184,4 +186,22 @@ def rs_connection(HOST,AWS_RS_PORT,AWS_RS_DATABASE,AWS_RS_USER,AWS_RS_PASS):
     cur = con.cursor()
 
     return cur,con
+```
+
+for querying, you can use the following script:
+
+```python
+def qry_redshift(rs_variable):
+
+    cur,con = rs_connection('<rs_host>','<rs_port>','<rs_database>','<rs_user>','<rs_pass>')
+
+    qry_load = '''
+                select * from clients_table
+                where date >= %(variable)s;   
+    '''
+
+    select_param = {'variable': rs_variable}
+
+    cur.execute(qry_load, select_param)
+    con.commit()
 ```
