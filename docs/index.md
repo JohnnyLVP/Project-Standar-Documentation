@@ -1,16 +1,3 @@
-## Cabecera
-
-**Aqui iria el index del github.io**
-
-** Descripicion General de la documentacion
-	** Direccionamiento a Repositorio
-** Direccionamiento a plantillas de
-	Python Redshift/S3
-	Pyspark
-	-- Scala
-
------ Afinar documentacion de Templates y ver que se necesitaria en el predict, ahi podria ir lo de la integracion?? pues al fin y al cabo el predict es lo que interacturara de manera mas directa con otros sistemas.
-
 ## Table of Content
 
 * 1 Redshift Best Practices()
@@ -205,3 +192,33 @@ def qry_redshift(rs_variable):
     cur.execute(qry_load, select_param)
     con.commit()
 ```
+
+* Copy Command with Python
+
+	If you want to execute the `copy command` using Python, you can use the following function:
+
+```python
+def CopyAPDTables(s3_path, access_key_id, secret_access_key):
+
+    cur, con = rs_connection('<rs_host>','<rs_port>','<rs_database>','<rs_user>','<rs_pass>')
+
+    qry_load = '''
+                copy <table_name>
+                from %(s3_path)s
+                access_key_id %(s3_key_id)s
+                secret_access_key %(s3_secret_key)s
+                delimiter ';'
+                removequotes;
+            '''
+
+    select_param = {'s3_path': s3_path,
+                    's3_key_id': access_key_id,
+                    's3_secret_key': secret_access_key}
+
+    cur.execute(qry_load, select_param)
+    con.commit()
+```
+If you want to add more functions of the copy command you can check the [Copy Redshift Documentation](https://docs.aws.amazon.com/redshift/latest/dg/r_COPY.html)
+
+
+* Unload Command with Python
