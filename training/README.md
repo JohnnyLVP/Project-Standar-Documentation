@@ -34,36 +34,3 @@
 ### 2.4 Model Format
 *In Which format the model is serialized?(Pickle, parquet, other binary format)*
 *In which bucket of S3 will be upload the model?*
-
-## 3. Data
-
-### 3.1 Input
-*Which inputs are needed for the solution (CSVs, parameters, database, parquet files)? And where will each of them be located (S3, Redshift)?*
-
-*List all the input data following the next*
-
-
-|Table Name|Table Format|AWS Location|Schema/S3 Path|Size|
-|---|---|---|---|---|
-| *Name of the Table*   | *Is a database table, parquet file, csv file, etc.*  | *Where is the data Redshift or S3* | *where is located, if is in Redshift the name of the schema, if is in S3 the path where is the file*|*Data Volume in MB or GB*||
-
-### 3.2 Output
-*Which outputs generate the model? And where will each of them be located (S3, Redshift)?*
-
-*Which Project or Business Areas will use the data?*
-
-*List all the input data following the next*
-
-|Table Name|Table Format|AWS Location|Schema/S3 Path|Size|Project/BusinessArea|
-|---|---|---|---|----|----|
-|*Name of the Table*| *Is a database table, parquet file, csv file, etc.*  | *Where is the data Redshift or S3* | *Where is located, if is in Redshift the name of the schema, if is in S3 the path where is the file*|*Data Volume in MB or GB*|*Which Area or Business Area will use the output?*|
-
-### 3.3 Data Variables Dictionary
-
-*List all the variables that the model will use for training and prediction*
-
-*Example:*
-
-|Model|Training/Prediction|Variable Name|Variable Description|Data Type|
-|-----|-------------------|-------------|--------------------|---------|
-|Offer Model|Training|Codpais|Is the Code of the country | varchar|
