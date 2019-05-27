@@ -4,12 +4,12 @@
 
 ## Table of Contents
 
-* [1. Github WorkFlow]()
-* [2. Code Guidelines]()
-* [3. Conceptual Architecture](1-Technical-Architecture)
-* [4. Technical Architecture](1-Technical-Architecture)
-* [5. Technologies](3-Technologies)
-* [6. Manual](4-Manual)
+* [1 Github WorkFlow](1-Github-WorkFlow)
+* [2 Code Guidelines](2-Code-Guidelines)
+* [3 Conceptual Architecture](3-Conceptual-Architecture)
+* [4 Technical Architecture](4-Technical-Architecture)
+* [5 Technologies](5-Technologies)
+* [6 Manual](6-Manual)
 
 
 ## 1. GitHub WorkFlow
@@ -47,6 +47,8 @@ minor version by one)
 Most of the code is written in Python and tries to follow the [PEP8 standard](https://www.python.org/dev/peps/pep-0008/).
 
 Documentation follows the [Google documentation guidelines](http://google.github.io/styleguide/pyguide.html?showone=Comments#Comments). [Example](http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html).
+
+
 
 ## 3. Conceptual Architecture
 *In this section explain the train/predict conceptual architecture that the aplication has.*
