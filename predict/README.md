@@ -7,14 +7,17 @@
   * [1.2 ]
 + [2 Predict Data]()
   + [2.1 Input Data]()
+  + [2.2 Input Data Dictionary]
   + [2.2 Output Data]()
+  + [2.3 ]
 
 
 * Integracion con otros sistemas
 * Descripcion de cada step que se de en el predict
 * datos output
 
-input for predict
+## 1 Predict
+## 2 Predict Data
 
 
 ### 3.2 Predict Output
