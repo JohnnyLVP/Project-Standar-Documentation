@@ -1,7 +1,7 @@
 # CloudFormation Templates
 In this folder we will find all the services that the aplication ***Aplication-Name*** will need to be deployed.
 
-*In this doc, please describe each template*
+*In this doc, please describe each CloudFormation template, describe them consider the current folder structure. *
 
 + *What this template does?*
 
