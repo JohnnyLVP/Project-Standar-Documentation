@@ -14,6 +14,7 @@ In this folder we will find all the services that the aplication ***Aplication-N
 + *Describe all the characteristics of the service.*
 
 ***Describe the templates following the next structure:***
+
 ***- Setup (services that has to be deployed once)***
 
 *Consider that the setup services need a CloudFormation template and all the detail of the service,because that services will be request for deploying by Jira*
