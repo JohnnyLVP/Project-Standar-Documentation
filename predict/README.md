@@ -4,7 +4,8 @@
 
 + [1 Predict]()
   + [1.1 Predict Steps]()
-  + [1.2 Integration]()
+  + [1.2 Libraries]()
+  + [1.3 Integration]()
 + [2 Predict Data]()
   + [2.1 Input Data]()
   + [2.2 Input Data Dictionary]()
@@ -16,7 +17,14 @@
 
 *Detail the steps that the prediction process does*
 
-### 1.2 Integration
+### 1.2 Libraries
+*List the libraries and the version of each one, that the predict process use*
+
+|Library|Version|
+|-------|-------|
+|*Name of the library*|*Version*|
+
+### 1.3 Integration
 
 *Detail the aplication or area that will use the predictions, and how the project will be integrated with that.*
 

@@ -12,6 +12,7 @@
   * [2.4 Model Format](24-model-format)
   * [2.5 Model Metrics](25-model-metrics)
   * [2.6 Execution Frecuency](26-execution-frecuency)
+  * [2.7 Libraries](27-libraries)
 * [3 Training Data](3-training-data)
   * [3.1 Data Dictionary](31-data-dictionary)
   * [3.2 Input Data](32-input-data)
@@ -41,6 +42,13 @@
 
 ### 2.6 Execution Frecuency
 *Describe here the event that will trigger the training, or if the training has to be executed manually.*
+
+### 2.7 Libraries
+*List the libraries and the version of each one, that the training process use*
+
+|Library|Version|
+|-------|-------|
+|*Name of the library*|*Version*|
 
 ## 3. Training Data
 ### 3.1 Data Dictionary
