@@ -4,15 +4,17 @@
 
 # Table of Contents
 
-* [1. Analitical Conceptual Architecture](1-Analitical-Conceptual-Architecture)
-* [2. Training]()
-  * [2.1. Machine Learning Techniques]()
-  * [2.2. Parameters]()
-  * [2.3. Business Rules]()
-  * [2.4. Model Format]()
-* [3. Training Data]()
-  * [3.1. Data Dictionary]()
-  * [3.2. Input Data]()
+* [1 Analitical Conceptual Architecture](1-Analitical-Conceptual-Architecture)
+* [2 Training](2-Training)
+  * [2.1 Machine Learning Techniques](2.1-Machine-Learning-Techniques)
+  * [2.2 Parameters](2.2-Parameters)
+  * [2.3 Business Rules](2.3-Business-Rules)
+  * [2.4 Model Format](2.4-Model-Format)
+  * [2.5 Model Metrics](2.5-Model-Metrics)
+  * [2.6 Execution Frecuency](2.6-Execution-Frecuency)
+* [3 Training Data](3-Training-Data)
+  * [3.1 Data Dictionary](3.1-Data-Dictionary)
+  * [3.2 Input Data](3.2-Input-Data)
 
 ## 1. Execution Flow Diagram
 *Put the flow diagram for the execution*
@@ -34,7 +36,10 @@
 *In Which format the model is serialized?(Pickle, parquet, other binary format)*
 *In which bucket of S3 will be upload the model?*
 
-### 2.5 Frecuency
+### 2.5 Model Metrics
+*Put here the metrics that the model has.*
+
+### 2.6 Execution Frecuency
 *Describe here the event that will trigger the training, or if the training has to be executed manually.*
 
 ## 3. Training Data
