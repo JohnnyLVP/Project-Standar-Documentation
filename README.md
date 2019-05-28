@@ -44,7 +44,7 @@ minor version by one)
 
 ## 2. Code Guidelines
 
-Most of the code is written in Python and tries to follow the [PEP8 standard](https://www.python.org/dev/peps/pep-0008/).
+Most of the code must be written in Python and tries to follow the [PEP8 standard](https://www.python.org/dev/peps/pep-0008/).
 
 Documentation follows the [Google documentation guidelines](http://google.github.io/styleguide/pyguide.html?showone=Comments#Comments). [Example](http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html).
 

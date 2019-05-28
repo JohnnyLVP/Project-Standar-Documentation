@@ -13,11 +13,18 @@ In this folder we will find all the services that the aplication ***Aplication-N
 
 + *Describe all the characteristics of the service.*
 
-*Consider that some service dont need a CloudFormation template because for cloud team policy, the services that dont need to be updated frequiently, this services need the detail of the characteristics because, will be request for deploying by Jira*
+***Describe the templates following the next structure:***
+***- Setup (services that has to be deployed once)***
+
+*Consider that the setup services need a CloudFormation template and all the detail of the service,because that services will be request for deploying by Jira*
+*The services in the setup folder are DynamoDb, IAM Roles, Security Groups,SNS,SQS.*
+
+***- Deploy (services that can be deployed more that once)***
+
 
 # Table of Contents
 
 * [1 Deploy](1-Deploy)
-  * [1.2 Template File](1.2-Template-File)
+  * [1.2 < Template File >](1.2-Template-File)
 * [2 Setup](2-Setup)
-  * [2.2 Template File](2.2-Template-File)
+  * [2.2 < Template File >](2.2-Template-File)

@@ -12,33 +12,43 @@
   + [2.4 Output Data Dictionary]()
 
 ## 1 Predict
+### 1.1 Prediction steps
+
+*Detail the steps that the prediction process does*
+
+### 1.2 Integration
+
+*Detail the aplication or area that will use the predictions, and how the project will be integrated with that.*
+
 ## 2 Predict Data
+
 ### 2.1 Input Data
 *Which inputs read the predict? And where will each of them be located (S3, Redshift)?*
 
-*Which Project or Business Areas will use the data?*
-
-*List all the input data following the next*
+*List all the input data following the next table structure*
 
 |Table Name|Table Format|AWS Location|Schema/S3 Path|Size|Project/BusinessArea|
 |---|---|---|---|----|----|
 |*Name of the Table*| *Is a database table, parquet file, csv file, etc.*  | *Where is the data Redshift or S3* | *Where is located, if is in Redshift the name of the schema, if is in S3 the path where is the file*|*Data Volume in MB or GB*|*Which Area or Business Area will use the output?*|
 
 ### 2.2 Input Data Dictionary
+*Dictionary of the dataset that will be used in the prediction process*
+
 |Table Name|Table Variable|Variable Format|Description|
 |---|---|---|---|
+|*Name of the table or file*|*List the variables*|*Format of the variable (Varchar, Integer, etc)*|*Description of the feature*|
 ### 2.3 Output Data
 *Which outputs generate the predict? And where will each of them be located (S3, Redshift)?*
 
-*Which Project or Business Areas will use the data?*
-
-*List all the input data following the next*
+*List all the output data following the next table structure*
 
 |Table Name|Table Format|AWS Location|Schema/S3 Path|Size|Project/BusinessArea|
 |---|---|---|---|----|----|
 |*Name of the Table*| *Is a database table, parquet file, csv file, etc.*  | *Where is the data Redshift or S3* | *Where is located, if is in Redshift the name of the schema, if is in S3 the path where is the file*|*Data Volume in MB or GB*|*Which Area or Business Area will use the output?*|
 
 ### 2.4 Output Data Dictionary
+*Dictionary of the dataset result of the prediction process*
 
 |Table Name|Table Variable|Variable Format|Description|
 |---|---|---|---|
+|*Name of the table or file*|*List the variables*|*Format of the variable (Varchar, Integer, etc)*|*Description of the feature*|
