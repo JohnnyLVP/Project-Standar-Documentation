@@ -25,8 +25,6 @@ In this folder we will find all the services that the aplication ***Aplication-N
 
 + *Describe all the characteristics of the service.*
 
-***Describe the templates following the next structure:***
-
 ## 2. Setup
 
 ***- Setup (services that has to be deployed once)***
