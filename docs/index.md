@@ -81,7 +81,7 @@ For working with the **AWS Services** in Python, we need to use the Boto3 Librar
 
 if you have installed pip, you can install `boto3` executing as admin, the following script in the shell
 
-```
+```python
 pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org boto3
 ```
 
@@ -107,7 +107,7 @@ s3 = boto3.client('s3',
 
 Use this code line, when you want to list all files in a S3 path:
 
-```Python
+```python
 for key in s3.list_objects(Bucket='<Bucket-Name>', Prefix = '<S3-Key-Path>')['Contents']:
     print(key['Key'])
 ```
@@ -152,7 +152,7 @@ For connecting to Redshift using python, we can use `psycopg2` library, that all
 
 if you have installed pip, you can install `psycopg2` executing as admin, the following script in the shell
 
-```
+```python
 pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org psycopg2
 ```
 
