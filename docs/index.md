@@ -1,10 +1,10 @@
 ## Table of Content
 
-* 1 Redshift Best Practices()
-* 2 Python Best Practices()
-	* 2.1 Python Code Guide Lines()
-	* 2.2 AWS SDK for Python()
-	* 2.3 Redshift Connection with Python()
+* [1 Redshift Best Practices](#1-redshift-best-practices)
+* [2 Python Best Practices](#2-python-best-practices)
+	* [2.1 Python Code Guide Lines](#21-python-code-guide-lines)
+	* [2.2 AWS SDK for Python](#22-aws-sdk-for-python)
+	* [2.3 Redshift Connection with Python](#23-redshift-connection-with-python)
 
 ## 1 Redshift Best Practices
 
@@ -222,3 +222,27 @@ If you want to add more functions of the copy command you can check the [Copy Re
 
 
 * Unload Command with Python
+If you want to execute the `unload command` using Python, you can use the following function:
+
+```python
+def CopyAPDTables(s3_path, access_key_id, secret_access_key):
+
+	cur, con = rs_connection('<rs_host>','<rs_port>','<rs_database>','<rs_user>','<rs_pass>')
+
+	qry_load = '''
+							unload ($$ select * from <table> where <condition> $$)
+							to %(s3_path)s
+							access_key_id %(s3_key_id)s
+							secret_access_key %(s3_secret_key)s
+							delimiter ';'
+							removequotes;
+					'''
+
+	select_param = {'s3_path': s3_path,
+									's3_key_id': access_key_id,
+									's3_secret_key': secret_access_key}
+
+	cur.execute(qry_load, select_param)
+	con.commit()
+```
+If you want to add more functions of the unload command you can check the [Unload Redshift Documentation](https://docs.aws.amazon.com/redshift/latest/dg/r_UNLOAD.html)
