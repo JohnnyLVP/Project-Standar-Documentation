@@ -4,8 +4,8 @@
 
 # Table of Contents
 
-* [1 Analitical Architecture](1-analitical-architecture)
-* [2 Training](2-training)
+* [1 Analitical Architecture](#1-analitical-architecture)
+* [2 Training](#2-training)
   * [2.1 Machine Learning Techniques](21-machine-learning-techniques)
   * [2.2 Parameters](22-parameters)
   * [2.3 Business Rules](23-business-rules)
