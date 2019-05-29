@@ -198,7 +198,7 @@ def qry_redshift(rs_variable):
 	If you want to execute the `copy command` using Python, you can use the following function:
 
 ```python
-def CopyAPDTables(s3_path, access_key_id, secret_access_key):
+def CopyTables(s3_path, access_key_id, secret_access_key):
 
     cur, con = rs_connection('<rs_host>','<rs_port>','<rs_database>','<rs_user>','<rs_pass>')
 
@@ -225,7 +225,7 @@ If you want to add more functions of the copy command you can check the [Copy Re
 If you want to execute the `unload command` using Python, you can use the following function:
 
 ```python
-def CopyAPDTables(s3_path, access_key_id, secret_access_key):
+def UnloadTables(s3_path, access_key_id, secret_access_key):
 
 	cur, con = rs_connection('<rs_host>','<rs_port>','<rs_database>','<rs_user>','<rs_pass>')
 
