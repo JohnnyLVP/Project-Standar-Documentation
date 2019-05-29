@@ -4,7 +4,7 @@
 * [2 Python Best Practices](#2-python-best-practices)
 	* [2.1 Python Code Guide Lines](#21-python-code-guide-lines)
 	* [2.2 AWS SDK for Python](#22-aws-sdk-for-python)
-	* [2.3 Redshift Connection with Python](#23-redshift-connection-with-python)
+	* [2.3 Redshift Connection With Python](#23-redshift-connection-with-python)
 
 ## 1 Redshift Best Practices
 
@@ -146,7 +146,7 @@ For more details of using the `delete_object` function, you can find it [here](h
 **There are more functions in the `Boto3` library, that you can use, you'll find it in the [Documentation Web Page](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html)**
 
 
-### 2.2 Redshift Connection with Python
+### 2.3 Redshift Connection with Python
 
 For connecting to Redshift using python, we can use `psycopg2` library, that allow us to make query an executing from python.
 
@@ -230,17 +230,17 @@ def UnloadTables(s3_path, access_key_id, secret_access_key):
 	cur, con = rs_connection('<rs_host>','<rs_port>','<rs_database>','<rs_user>','<rs_pass>')
 
 	qry_load = '''
-		unload ($$ select * from <table> where <condition> $$)
-		to %(s3_path)s
-		access_key_id %(s3_key_id)s
-		secret_access_key %(s3_secret_key)s
-		delimiter ';'
-		removequotes;
-	'''
+							unload ($$ select * from <table> where <condition> $$)
+							to %(s3_path)s
+							access_key_id %(s3_key_id)s
+							secret_access_key %(s3_secret_key)s
+							delimiter ';'
+							removequotes;
+					'''
 
 	select_param = {'s3_path': s3_path,
-			's3_key_id': access_key_id,
-			's3_secret_key': secret_access_key}
+									's3_key_id': access_key_id,
+									's3_secret_key': secret_access_key}
 
 	cur.execute(qry_load, select_param)
 	con.commit()
