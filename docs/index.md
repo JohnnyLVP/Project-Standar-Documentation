@@ -235,7 +235,9 @@ def UnloadTables(s3_path, access_key_id, secret_access_key):
 							access_key_id %(s3_key_id)s
 							secret_access_key %(s3_secret_key)s
 							delimiter ';'
-							removequotes;
+							addquotes
+							parallel off
+							maxfilesize 256 mb;
 					'''
 
 	select_param = {'s3_path': s3_path,
