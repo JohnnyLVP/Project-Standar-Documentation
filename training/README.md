@@ -6,18 +6,18 @@
 
 * [1 Analitical Architecture](#1-analitical-architecture)
 * [2 Training](#2-training)
-  * [2.1 Machine Learning Techniques](21-machine-learning-techniques)
-  * [2.2 Parameters](22-parameters)
-  * [2.3 Business Rules](23-business-rules)
-  * [2.4 Model Format](24-model-format)
-  * [2.5 Model Metrics](25-model-metrics)
-  * [2.6 Execution Frecuency](26-execution-frecuency)
-  * [2.7 Libraries](27-libraries)
-* [3 Training Data](3-training-data)
-  * [3.1 Data Dictionary](31-data-dictionary)
-  * [3.2 Input Data](32-input-data)
+  * [2.1 Machine Learning Techniques](#21-machine-learning-techniques)
+  * [2.2 Parameters](#22-parameters)
+  * [2.3 Business Rules](#23-business-rules)
+  * [2.4 Model Format](#24-model-format)
+  * [2.5 Model Metrics](#25-model-metrics)
+  * [2.6 Execution Frecuency](#26-execution-frecuency)
+  * [2.7 Libraries](#27-libraries)
+* [3 Training Data](#3-training-data)
+  * [3.1 Data Dictionary](#31-data-dictionary)
+  * [3.2 Input Data](#32-input-data)
 
-## 1. Execution Flow Diagram
+## 1. Analitical Architecture
 *Put the flow diagram for the execution*
 
 *Flow diagram: Need to considerer all the steps for running the training and all the services that are related with the training.*

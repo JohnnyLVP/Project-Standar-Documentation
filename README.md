@@ -4,12 +4,12 @@
 
 ## Table of Contents
 
-* [1 Github WorkFlow](1-Github-WorkFlow)
-* [2 Code Guidelines](2-Code-Guidelines)
-* [3 Conceptual Architecture](3-Conceptual-Architecture)
-* [4 Technical Architecture](4-Technical-Architecture)
-* [5 Technologies](5-Technologies)
-* [6 Manual](6-Manual)
+* [1 Github WorkFlow](#1-github-workflow)
+* [2 Code Guidelines](#2-code-guidelines)
+* [3 Conceptual Architecture](#3-conceptual-architecture)
+* [4 Technical Architecture](#4-technical-architecture)
+* [5 Technologies](#5-technologies)
+* [6 Manual](#6-manual)
 
 
 ## 1. GitHub WorkFlow
