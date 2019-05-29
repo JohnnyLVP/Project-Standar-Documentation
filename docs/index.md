@@ -230,17 +230,17 @@ def CopyAPDTables(s3_path, access_key_id, secret_access_key):
 	cur, con = rs_connection('<rs_host>','<rs_port>','<rs_database>','<rs_user>','<rs_pass>')
 
 	qry_load = '''
-							unload ($$ select * from <table> where <condition> $$)
-							to %(s3_path)s
-							access_key_id %(s3_key_id)s
-							secret_access_key %(s3_secret_key)s
-							delimiter ';'
-							removequotes;
-					'''
+		unload ($$ select * from <table> where <condition> $$)
+		to %(s3_path)s
+		access_key_id %(s3_key_id)s
+		secret_access_key %(s3_secret_key)s
+		delimiter ';'
+		removequotes;
+	'''
 
 	select_param = {'s3_path': s3_path,
-									's3_key_id': access_key_id,
-									's3_secret_key': secret_access_key}
+			's3_key_id': access_key_id,
+			's3_secret_key': secret_access_key}
 
 	cur.execute(qry_load, select_param)
 	con.commit()
