@@ -5,16 +5,16 @@ In this folder we will find all the services that the aplication ***Aplication-N
 
 # Table of Contents
 
-* [1 Deploy](1-Deploy)
-  * [1.2 < Template File >](#12-<template-file>)
-* [2 Setup](2-Setup)
-  * [2.2 < Template File >](#22-<template-file>)
+* [1 Deploy](#1-Deploy)
+  * [1.2 < Template File >](#12-<-template-file->)
+* [2 Setup](#2-Setup)
+  * [2.2 < Template File >](#22-<-template-file->)
 
 ## 1. Deploy
 
 ***- Deploy (services that can be deployed more that once)***
 
-### 1.2 <Template File>
+### 1.2 < Template File >
 + *What this template does?*
 
 + *Parameters that this template will use:*
@@ -34,7 +34,7 @@ In this folder we will find all the services that the aplication ***Aplication-N
 *Consider that the setup services need a CloudFormation template and all the detail of the service,because that services will be request for deploying by Jira*
 *The services in the setup folder are DynamoDb, IAM Roles, Security Groups,SNS,SQS.*
 
-### 2.2 <Template File>
+### 2.2 < Template File >
 
 + *What this template does?*
 
