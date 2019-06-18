@@ -29,6 +29,13 @@
 
 *Detail the aplication or area that will use the predictions, and how the project will be integrated with that.*
 
+If to run the predict process we need an api request, please share here an example of the request and the detail about the parameters that we will need.
+
+|Parameter|Detail|Example|
+|---------|-------|------|
+|*Name of the parameter*|*Definition of the parameter*|*Example*|
+
+
 ## 2 Predict Data
 
 ### 2.1 Input Data
