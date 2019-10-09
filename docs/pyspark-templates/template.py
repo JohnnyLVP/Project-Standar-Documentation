@@ -10,11 +10,19 @@ def get_dataframe(spark,filename = ''):
 
 	df = spark.read.csv(filename, header = True)
 
-	df.show()
+	return df
+
+def write_dataframe(df, filename = ''):
+
+	df.write.parquet()
+
 
 
 filename = 'iris.csv'
 
 sparksession = init_spark_session()
 
-get_dataframe(sparksession,filename)
+df = get_dataframe(sparksession,filename)
+
+df.write.parquet('~\\Documents\\datos')
+
