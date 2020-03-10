@@ -1,10 +1,15 @@
 ## Table of Content
 
-* [1 Redshift Best Practices](#1-redshift-best-practices)
-* [2 Python Best Practices](#2-python-best-practices)
-	* [2.1 Python Code Guide Lines](#21-python-code-guide-lines)
-	* [2.2 AWS SDK for Python](#22-aws-sdk-for-python)
-	* [2.3 Redshift Connection With Python](#23-redshift-connection-with-python)
+- [Table of Content](#table-of-content)
+- [1 Redshift Best Practices](#1-redshift-best-practices)
+  - [1.1 Amazon Redshift Best Practices for Designing Queries<a name="c_designing-queries-best-practices"></a>](#11-amazon-redshift-best-practices-for-designing-queriesa-name%22cdesigning-queries-best-practices%22a)
+- [2 Python Best Practices](#2-python-best-practices)
+  - [2.1 Python Code Guide Lines](#21-python-code-guide-lines)
+  - [2.2 AWS SDK for Python](#22-aws-sdk-for-python)
+    - [2.2.1 Python SDK for S3](#221-python-sdk-for-s3)
+  - [2.3 Redshift Connection with Python](#23-redshift-connection-with-python)
+- [3 PySpark Best Practices](#3-pyspark-best-practices)
+  - [3.1 Reading Files](#31-reading-files)
 
 ## 1 Redshift Best Practices
 
@@ -248,3 +253,19 @@ def UnloadTables(s3_path, access_key_id, secret_access_key):
 	con.commit()
 ```
 If you want to add more functions of the unload command you can check the [Unload Redshift Documentation](https://docs.aws.amazon.com/redshift/latest/dg/r_UNLOAD.html)
+
+## 3 PySpark Best Practices
+
+### 3.1 Reading Files
+
+* **Reading Parquet Files**
+
+```python
+df = spark.read.parquet("./path/where/data/is/located/")
+```
+
+* **Reading CSV Files**
+  
+```python
+df = spark.read.csv("./path/where/data/is/located/", header=True)
+```

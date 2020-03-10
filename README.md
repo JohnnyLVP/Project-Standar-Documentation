@@ -1,4 +1,12 @@
-# *< Project Title >*
+
+< Project Title >
+=================================
+
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20OS%20X%20%7C%20Windows%20-blue.svg)](https://github.com/JohnnyLVP/Project-Standar-Documentation/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/JohnnyLVP/Project-Standar-Documentation.svg)](https://github.com/JohnnyLVP/Project-Standar-Documentation/network)
+[![GitHub stars](https://img.shields.io/github/stars/JohnnyLVP/Project-Standar-Documentation.svg)](https://github.com/JohnnyLVP/Project-Standar-Documentation/stargazers)
+
+
 
 *A short description of the project*
 
@@ -24,11 +32,11 @@ We use a modified version of Gitflow:
 
 ### 1.2 Features
 
-1. Create new branch `feature/{short-description}` using `development` as base
+1. Create new branch `feature/{short-description}` using `develop` as base
 2. Work on it normally
-3. Open pull request to `development` when done
-4. Merge it to `development`
-5. Open pull request from `development` to `master` when doing a new release
+3. Open pull request to `develop` when done
+4. Merge it to `develop`
+5. Open pull request from `develop` to `master` when doing a new release
 6. Merge it to `master`
 7. Tag it as appropriate using the versioning scheme (increase the major version by one
 and reset the minor version to zero)
